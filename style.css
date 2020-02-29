@@ -1,0 +1,254 @@
+#aaa{
+	width: 100%;
+	height: 60px;
+	background: black;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#p1{
+	color: white;
+	font-size: 20px;
+}
+#parent{
+
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+#child1{
+	width: 100%;
+	max-height: 350px;
+	background:#C4C4C4;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+}
+#carousel{
+	width: 950px;
+	max-height: 350px;
+
+}
+
+
+#child2{
+	width: 100%;
+	min-height: 300px;
+	background:#C4C4C4;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+
+.child21{
+	height: 200px;
+	width: 300px;
+
+	justify-content: center;
+	display: flex;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+
+}
+#dv1{
+	margin-right: 25px;
+}
+#dv3{
+	margin-left: 25px;
+}
+
+.imgdiv1{
+	background-image: url("html.jpg");
+}
+.imgdiv2{
+	background-image: url("react.jpg");
+}
+.imgdiv3{
+	background-image: url("node.png");
+}
+.hoverdiv{
+	height: 1px;
+	width: 300px;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: 0.5s; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+
+}
+.child21:hover .hoverdiv{
+	opacity: 1;
+	height: 200px;
+
+
+}
+
+.hoverbutton{
+	width: 160px;
+	height: 50px;
+	background:#739BA3;
+	border:none;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.90);
+}
+#child3{
+	width: 100%;
+	min-height: 400px;
+	background:black;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+
+}
+.grancvelbtn{
+	width: 120px;
+	height: 40px;
+	background:black;
+	border:none;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.90);
+}
+.inp{
+	margin-bottom: 10px;
+	text-align: center;
+
+	
+}
+#child31{
+	width: 350px;
+	min-height: 350px;
+	
+	margin-right: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#cont{
+    height: 30px;
+    width: 250px;
+ 
+}
+#contp{
+	font-size: 20px;
+	color: white;
+}
+.pp{
+	font-size: 18px;
+	background: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .child21 {
+    height: 150px;
+	width: 250px;
+  }
+  .child21:hover .hoverdiv{
+	opacity: 1;
+	height: 150px;
+
+
+}
+}
+
+
+@media only screen and (max-width: 830px) {
+	#child2{
+	width: 100%;
+	min-height: 300px;
+	background:#C4C4C4;
+	display: grid;
+	grid-row-gap: 15px;
+
+}
+
+#dv3{
+	margin-left:0;
+}
+
+
+}
+
+
+@media only screen and (max-width: 830px) {
+	#child2{
+	width: 100%;
+	min-height: 300px;
+	background:#C4C4C4;
+	display: grid;
+	grid-row-gap: 15px;
+
+}
+
+#dv3{
+	margin-left:0;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 754px) {
+
+.frame{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 100px;
+}
+#child31{
+	width: 250px;
+	height: 250px;
+}
+
+
+}
+
+@media only screen and (max-width: 570px) {
+
+.frame{
+	width: 180px;
+	height: 180px;
+	margin-bottom: 150px;
+}
+#child31{
+	width: 180px;
+	height: 180px;
+}
+
+  .child21 {
+    height: 80px;
+	width: 180px;
+  }
+  .child21:hover .hoverdiv{
+	opacity: 1;
+	height: 80px;
+
+
+}
+.hoverbutton{
+	width: 100px;
+	height: 20px;
+	background:#739BA3;
+	border:none;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.90);
+	font-size: 10px;
+}
+
+}

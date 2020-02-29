@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="news.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="parent">
+		<div class="bs-example" id="navdiv">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand"><img src="logo.jpg" style="height: 35px;width: 35px"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link">ԳԼԽԱՎՈՐ</a>
+                <a  href="#" class="nav-item nav-link">ՆՈՐՈԻԹՅՈԻՆՆԵՐ</a>
+                <a href="test.html" class="nav-item nav-link">ԹԵՍՏԵՐ</a>
+     
+     
+            </div>
+
+        </div>
+    </nav>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ԳՐԱՆՑՎԵԼ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <input class="form-control inp" id="name" placeholder="Անուն">
+       <input class="form-control inp" id="surname" placeholder="Ազգանուն">
+       <input class="form-control inp" id="age" placeholder="Տարիք">
+       <input class="form-control inp" id="pass" type="password" placeholder="Գաղտնաբար">
+       <input class="form-control inp" id="confpass" type="password" placeholder="Կրկնել գաղտնաբառը">     
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="grancvelbtn" onclick="Reg()">Գրանցվել</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h4 class="modal-title">ՄՈԻՏՔ</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <input class="form-control inp" placeholder="Անուն">
+        <input class="form-control inp" type="password" placeholder="Գաղտնաբար">
+      
+              </div>
+      <div class="modal-footer">
+        <button type="button"  class="grancvelbtn">Մուտք</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="new">
+	<div class="item">
+		<div class="vernagir"><span style="font-size: 17px">JS Full Stack  ծրագրավորման դասընթաց</span></div>
+		<div class="nyut">
+			<div class="nkar1"></div>
+			<div class="nyutimasin">
+				<div class="dv1">
+					<p>Դասընթացը իր մեջ ներառում է հետևյալ տեխնոլոգիաների խորացված ուսուցանում</p>
+					<ul>
+						<li>EcmaScript 6</li>
+						<li>ReactJS</li>
+						<li>NPM</li>
+						<li>NodeJS</li>
+						<li>Node Express</li>
+						<li>Git</li>
+            <li>...</li>
+					</ul>
+				</div>
+				<button class="imanal" data-toggle="modal" data-target=".bs-example-modal-new">Իմանալ ավելին</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="new">
+	<div class="item">
+		<div class="vernagir"><span style="font-size: 17px">Front End ծրագրավորման դասընթաց</span></div>
+		<div class="nyut">
+			<div class="nkar2"></div>
+			<div class="nyutimasin">
+
+				<div class="dv1">
+					<p>Դասընթացը իր մեջ ներառում է հետևյալ տեխնոլոգիաների խորացված ուսուցանում</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Java Script</li>
+
+					</ul>
+					<p>Տեվողությունը : 1 ամիս ,ամեն օր (3 ժամ)</p>
+					<p>Արժեքը: 20000 դր</p>					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+ 
+<div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  
+  <div class="modal-dialog">
+    
+    <!-- Modal Content: begins -->
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+          
+          <h4 class="modal-title" id="gridSystemModalLabel">JS Full Stack</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    
+      <!-- Modal Body -->  
+      <div class="modal-body">
+        <div class="body-message">
+<p>Դասընթացը ներառում է JavaScript ծրագրավորման լեզվի գերինտենսիվ խորացված ուսուցանում։ Այն իր մեջ ներառում է ամբողջական կուրս զրոյից մինչև պրոֆեսիոնալ WEB կայքերի պատրաստում։</p>
+
+<p>Դասընթացը իր մեջ ներառում է հետևյալ տեխնոլոգիաների խորացված ուսուցանում</p>
+					<ul>
+						<li>EcmaScript 6</li>
+						<li>ReactJS</li>
+						<li>NPM</li>
+						<li>NodeJS</li>
+						<li>Node Express</li>
+						<li>Git</li>
+					</ul>
+<p>Ինչպես նաև ծանոթացում հետևյալ լեզուների և տեխնոլոգիաների հետ</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Webpack</li>
+						<li>Linux server</li>
+						<li>Babel</li>
+					</ul>
+					<p>Տեվողությունը : 3 ամիս ,ամեն օր (3ժամ)</p>
+					<p>Արժեքը: 30000 դր</p>
+
+        </div>
+      </div>
+    
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="grancvelbtn" data-dismiss="modal">Փակել</button>
+      </div>
+    
+    </div>
+    <!-- Modal Content: ends -->
+    
+  </div>
+
+
+
+</body>
+<script src="news.js"></script>
+</html>
